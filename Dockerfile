@@ -13,6 +13,7 @@ RUN dotnet restore tests/tests.csproj
 COPY . .
 
 # Run tests
+ENV TEAMCITY_PROJECT_NAME=fake
 RUN dotnet test tests/tests.csproj
 
 # Publish app
