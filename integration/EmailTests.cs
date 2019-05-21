@@ -46,13 +46,7 @@ namespace integration
                 messages.Should().HaveElement("items")
                     .Which.Should().BeOfType<JArray>()
                     .Which.First.Should().HaveElement("Raw")
-                    .Which.Should().HaveElement("From");
-                
-                // messages.Should().HaveElement("items")
-                //     .Which.Should().BeOfType<JArray>()
-                //     .Which.First.Should().HaveElement("Raw")
-                //     .Which.Should().HaveElement("From")
-                //     .Which.Should().BeEquivalentTo("generator@generate.com");
+                    .Which.Should().HaveElement("Error");
             }
         }
     }
