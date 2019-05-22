@@ -46,7 +46,7 @@ namespace integration
                 messages.Should().HaveElement("items")
                     .Which.Should().BeOfType<JArray>()
                     .Which.First.Should().HaveElement("Raw")
-                    .Which.Should().HaveElement("Error");
+                    .Which.Should().HaveElement("From");
             }
         }
     }
