@@ -4,4 +4,4 @@ services:
   generator:
     image: my-registry:55000/gen:ci-${GENERATOR_BUILD_NUMBER-10}
     ports:
-      - "${PORT_GENERATOR-80}:80"
+      - "${PORT_GENERATOR-8081}:80"
